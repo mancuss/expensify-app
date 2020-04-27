@@ -4,7 +4,7 @@ const app = express()
 
 
 const publicPath = path.join(__dirname, '..', "public")
-
+const port = 3000
 app.use(express.static(publicPath))
 
 app.get('*', (req, res)=> {
@@ -13,4 +13,5 @@ app.get('*', (req, res)=> {
 
 app.listen(3000, () => {
     console.log("Server is running...")
+    console.log("Port:", port)
 })
