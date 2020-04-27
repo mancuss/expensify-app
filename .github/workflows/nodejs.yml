@@ -27,10 +27,10 @@ jobs:
     - name: GitHub Action for Yarn
       uses: Borales/actions-yarn@v2.1.0
       with:
-        cmd: yarn install
+        cmd: install
     - name: GitHub Action for Yarn
       uses: Borales/actions-yarn@v2.1.0
       with:
-        cmd: yarn build:prod
+        cmd: build:prod
       env:
         CI: true
