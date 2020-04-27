@@ -10,6 +10,9 @@ test('should render ExpenseForm correctly', () => {
     
 })
 
-test('should render ExpenseForm ith expens data', () => {
+test('should render ExpenseForm with expense data', () => {
+    const wrapper = shallow(<ExpenseForm 
+        expense={expenses[0]}/>)
+    expect(wrapper).toMatchSnapshot()
     
 })
