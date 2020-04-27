@@ -32,5 +32,12 @@ jobs:
       uses: Borales/actions-yarn@v2.1.0
       with:
         cmd: build:prod
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: "artefacts"
+        # Directory containing files to upload
+        path: "public"
       env:
         CI: true
