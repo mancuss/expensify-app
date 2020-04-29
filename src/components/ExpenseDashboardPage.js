@@ -6,8 +6,8 @@ import ExpesneSummary from './ExpensesSummary'
 
 const ExpenseDashboardPage = () => (
     <div>
-        <ExpenseListFilters />
         <ExpesneSummary />
+        <ExpenseListFilters />
         <ExpenseList />
     </div>
 );

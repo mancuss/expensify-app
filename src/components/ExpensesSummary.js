@@ -8,7 +8,7 @@ export const ExpensesSummary = (props) => {
     console.log("Expense Sumamry is here")
     return (
         <div>
-            Viewing {props.expensesCount} {props.expensesCount === 1 ? "expense" : "expenses"} totalling {numeral(props.expensesTotal / 100).format('$0,0.00')}
+           <h1>Viewing {props.expensesCount} {props.expensesCount === 1 ? "expense" : "expenses"} totalling {numeral(props.expensesTotal / 100).format('$0,0.00')}</h1>
         </div>
     )
 }

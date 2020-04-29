@@ -2,30 +2,36 @@
 
 exports[`should render Expense Summary component with empty expense list 1`] = `
 <div>
-  Viewing 
-   
-  expenses
-   totalling 
-  $0.00
+  <h1>
+    Viewing 
+     
+    expenses
+     totalling 
+    $0.00
+  </h1>
 </div>
 `;
 
 exports[`should render Expense Summary component with expenses 1`] = `
 <div>
-  Viewing 
-   
-  expenses
-   totalling 
-  $0.00
+  <h1>
+    Viewing 
+     
+    expenses
+     totalling 
+    $0.00
+  </h1>
 </div>
 `;
 
 exports[`should render Expense Summary component with one expens 1`] = `
 <div>
-  Viewing 
-   
-  expenses
-   totalling 
-  $0.00
+  <h1>
+    Viewing 
+     
+    expenses
+     totalling 
+    $0.00
+  </h1>
 </div>
 `;
