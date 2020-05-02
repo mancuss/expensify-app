@@ -1,6 +1,5 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const dotenv = require("dotenv");
 const webpack = require("webpack");
 
 process.env.NODE_ENV = process.env.NODE_ENV || "development";
@@ -53,7 +52,7 @@ module.exports = (env) => {
     },
     plugins: [
       CSSExtract,
-      new webpack.DevfinePligin({
+      new webpack.DefinePlugin({
         "process.env.FIREBASE_API_KEY": JSON.stringify(
           process.env.FIREBASE_API_KEY
         ),
