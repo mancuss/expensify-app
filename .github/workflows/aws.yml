@@ -6,18 +6,18 @@ on:
   pull_request:
     branches: [master]
 
-env:
-  FIREBASE_API_KEY=${{ secrets.AWS_SECRET_ID }}
-  FIREBASE_AUTH_DOMAIN=${{ secrets.AWS_SECRET_ID }}
-  FIREBASE_DATABASE_URL=${{ secrets.AWS_SECRET_ID }}
-  FIREBASE_PROJECT_ID=${{ secrets.AWS_SECRET_ID }}
-  FIREBASE_STORAGE_BUCKET=e${{ secrets.AWS_SECRET_ID }}
-  FIREBASE_MESSAGING_SENDER_ID=${{ secrets.AWS_SECRET_ID }}
-  FIREBASE_APP_ID=${{ secrets.AWS_SECRET_ID }}
-  FIREBASE_MEASUREMENT_ID=${{ secrets.AWS_SECRET_ID }}
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      FIREBASE_API_KEY: ${{ secrets.AWS_SECRET_ID }}
+      FIREBASE_AUTH_DOMAIN: ${{ secrets.AWS_SECRET_ID }}
+      FIREBASE_DATABASE_URL: ${{ secrets.AWS_SECRET_ID }}
+      FIREBASE_PROJECT_ID: ${{ secrets.AWS_SECRET_ID }}
+      FIREBASE_STORAGE_BUCKET: ${{ secrets.AWS_SECRET_ID }}
+      FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.AWS_SECRET_ID }}
+      FIREBASE_APP_ID: ${{ secrets.AWS_SECRET_ID }}
+      FIREBASE_MEASUREMENT_ID: ${{ secrets.AWS_SECRET_ID }}
     strategy:
       matrix:
         node-version: [12.x]
