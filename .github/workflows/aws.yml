@@ -10,14 +10,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      FIREBASE_API_KEY: ${{ secrets.AWS_SECRET_ID }}
-      FIREBASE_AUTH_DOMAIN: ${{ secrets.AWS_SECRET_ID }}
-      FIREBASE_DATABASE_URL: ${{ secrets.AWS_SECRET_ID }}
-      FIREBASE_PROJECT_ID: ${{ secrets.AWS_SECRET_ID }}
-      FIREBASE_STORAGE_BUCKET: ${{ secrets.AWS_SECRET_ID }}
-      FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.AWS_SECRET_ID }}
-      FIREBASE_APP_ID: ${{ secrets.AWS_SECRET_ID }}
-      FIREBASE_MEASUREMENT_ID: ${{ secrets.AWS_SECRET_ID }}
+      FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
+      FIREBASE_AUTH_DOMAIN: ${{ secrets.FIREBASE_AUTH_DOMAIN }}
+      FIREBASE_DATABASE_URL: ${{ secrets.FIREBASE_DATABASE_URL }}
+      FIREBASE_PROJECT_ID: ${{ secrets.AWS_SECREFIREBASE_PROJECT_IDT_ID }}
+      FIREBASE_STORAGE_BUCKET: ${{ secrets.FIREBASE_STORAGE_BUCKET }}
+      FIREBASE_MESSAGING_SENDER_ID: ${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
+      FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
+      FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
     strategy:
       matrix:
         node-version: [12.x]
