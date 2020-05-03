@@ -10,6 +10,12 @@ exports[`should render header correctly4 1`] = `
     exact={true}
     to="/"
   >
+    Home
+  </[object Object]>
+  <[object Object]
+    activeClassName="is-active"
+    to="/dashboard"
+  >
     Dashboard
   </[object Object]>
   <[object Object]
@@ -18,11 +24,10 @@ exports[`should render header correctly4 1`] = `
   >
     Create Expense
   </[object Object]>
-  <[object Object]
-    activeClassName="is-active"
-    to="/help"
+  <button
+    onClick={[Function]}
   >
-    Help
-  </[object Object]>
+    Logout
+  </button>
 </header>
 `;
