@@ -13,7 +13,6 @@ export const PublicRoute = ({
     component={(props) =>
       !isAuthenticated ? (
         <div>
-          <Header />
           <Component {...props} />
         </div>
       ) : (
