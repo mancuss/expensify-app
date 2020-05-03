@@ -5,7 +5,6 @@ import selectExpensesTotal from "../selectors/expenses-total";
 import numeral from "numeral";
 
 export const ExpensesSummary = (props) => {
-  console.log("Expense Sumamry is here");
   return (
     <div>
       <h1>
