@@ -28,6 +28,9 @@ export const startAddExpense = (expenseData = {}) => {
             ...expense,
           })
         );
+      })
+      .catch((e) => {
+        console.log("1", e);
       });
   };
 };
@@ -46,6 +49,9 @@ export const startRemoveExpense = ({ id }) => {
       .remove()
       .then(() => {
         dispatch(removeExpense({ id }));
+      })
+      .catch((e) => {
+        console.log("2", e);
       });
   };
 };
@@ -65,6 +71,9 @@ export const startEditExpense = (id, updates) => {
       .set(updates)
       .then(() => {
         dispatch(editExpense(id, updates));
+      })
+      .catch((e) => {
+        console.log("3", e);
       });
   };
 };
@@ -90,6 +99,9 @@ export const startSetExpenses = () => {
           });
         });
         dispatch(setExpenses(expenses));
+      })
+      .catch((e) => {
+        console.log("4", e);
       });
   };
 };
