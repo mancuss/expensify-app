@@ -15,7 +15,7 @@ module.exports = (env) => {
   const CSSExtract = new MiniCssExtractPlugin({ filename: "styles.css" });
   console.log(`IsProduction: ${isProduction}`);
   return {
-    entry: "./src/app.js", // entry point
+    entry: ["babel-polyfill", "./src/app.js"], // entry point
     // entry: './src/playground/hoc.js',
     output: {
       path: path.join(__dirname, "public", "dist"),
